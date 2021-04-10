@@ -1,28 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="add"/>
-    <Button
-        android:id="@+id/btnShow"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="show"/>
-    <TextView
-        android:id="@+id/tvShow"
-        android:textColor="@color/black"
-        android:layout_margin="5dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BFBEBE"/>
+        android:orientation="vertical">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="add" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnShow"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:text="show" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#E8CECE">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="id" />
+
+                <EditText
+                    android:id="@+id/etCodeMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="codeMain" />
+
+                <EditText
+                    android:id="@+id/etCodeSide"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="codeSide" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/etSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="sale" />
+
+                <EditText
+                    android:id="@+id/etSalePercent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="salePercent" />
+
+                <EditText
+                    android:id="@+id/etPriceDontSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="priceDontSale" />
+
+                <EditText
+                    android:id="@+id/etPriceSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="priceSale" />
+
+                <EditText
+                    android:id="@+id/etTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="TotalItem" />
+
+                <EditText
+                    android:id="@+id/etTotalSold"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="TotalItemSold" />
+
+                <EditText
+                    android:id="@+id/etitemSoldInMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="itemSoldInMonth" />
+
+                <EditText
+                    android:id="@+id/etidUserSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="idUserSell" />
+
+                <EditText
+                    android:id="@+id/ettradeMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="tradeMark" />
+
+                <EditText
+                    android:id="@+id/etcharacteristics"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="characteristics" />
+
+                <EditText
+                    android:id="@+id/eteventCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="eventcode" />
+
+                <EditText
+                    android:id="@+id/etdaySell"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="daysell" />
+
+                <EditText
+                    android:id="@+id/etUrl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="url1" />
+
+                <EditText
+                    android:id="@+id/etUrl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="url2" />
+
+                <EditText
+                    android:id="@+id/etUrl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="url3" />
+
+                <EditText
+                    android:id="@+id/etUrl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="url4" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
